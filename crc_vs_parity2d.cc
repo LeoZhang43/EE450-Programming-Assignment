@@ -221,7 +221,7 @@ int main() {
             std::cout << "        Reuslt: Not Pass" << std::endl;
         }
         cout << "CRC :" << remainder << ";";
-        if(remainder == "1101010010110110"){
+        if(ans.compare("0000000000000000") == 0){
             std::cout << "                           Reuslt: Pass" << std::endl;
         }else{
             std::cout << "                           Reuslt: Not Pass" << std::endl;
