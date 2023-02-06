@@ -4,11 +4,13 @@
 
 using namespace std;
 
+//get the first string in dataVs.txt file
 string getFirstString(string line) {
     int spaceIndex = line.find(" ");
     return line.substr(0, spaceIndex);
 }
 
+//calculate first and second data with XOR
 string XOR(string first, string second){
 	string answer = "";
 	for(int i = 0;i < 64;i++){
@@ -19,6 +21,7 @@ string XOR(string first, string second){
 	return answer;
 }
 
+//get second string in dataVs.txt
 string getSecondString(string line) {
     int spaceIndex = line.find(" ");
     string first = line.substr(0, spaceIndex);
@@ -29,14 +32,7 @@ string getSecondString(string line) {
     return result;
 }
 
-int convertBinaryToInt(string s) {
-    int n = 0;
-    for (int i = 0; i < s.length(); i++) {
-        n = n * 2 + (s[i] - '0');
-    }
-    return n;
-}
-
+//do 2D parity check and get col, row in return
 string* convertString(string s) {
     char arr[8][8];
     int index = 0;
@@ -231,3 +227,4 @@ int main() {
 
     return 0;
 }
+
