@@ -3,7 +3,7 @@
 #include <string>
 
 using namespace std;
-
+//this function is generate from chatGPT
     string readDataRx(int lineNumber) {
     string line;
     ifstream file("dataRx.txt");
@@ -16,7 +16,8 @@ using namespace std;
     file.close();
     return line;
     }
-
+    
+//this function is generate from chatGPT
     string readDataTx(int lineNumber) {
     string line;
     ifstream file("dataTx.txt");
