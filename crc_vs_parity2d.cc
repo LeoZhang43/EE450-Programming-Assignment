@@ -212,7 +212,7 @@ int main() {
         //cout << ans << endl;
         vector<string> firstAnswer = convertString(First);
         vector<string> secondAnswer = convertString(Second);
-        cout << "2D parity:" << "Col: " << firstAnswer[0] << "; Row: " << firstAnswer[1] << " ;";
+        cout << "2D parity:" << "Col: " << firstAnswer[1] << "; Row: " << firstAnswer[0] << " ;";
         if(firstAnswer[0].compare(secondAnswer[0]) == 0 && 
             firstAnswer[1].compare(secondAnswer[1]) == 0){
             // std::cout << firstAnswer[0] << std::endl;
